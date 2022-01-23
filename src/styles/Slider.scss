@@ -1,0 +1,48 @@
+.slider-container {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid red;
+
+  .image-container {
+    position: relative;
+    border: 1px solid orange;
+    .slider-image {
+      object-fit: cover;
+      display: none;
+      margin-top: 200px;
+      height: 100%;
+
+    }
+
+    .active {
+      display: inherit;
+    }
+  }
+
+  .step-button-container {
+    width: 100%;
+    position: absolute;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+
+    i {
+      cursor: pointer;
+      color: rgba(6, 11, 38, 0.76);
+
+    }
+
+  }
+
+  &:hover {
+    .step-button-container {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+  }
+}

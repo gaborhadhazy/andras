@@ -1,0 +1,20 @@
+{
+  "infos": [
+    {"id": 0, "name": "Bognar Andras", "description": "Master’s Degree in Electrical Engineering\n\n\nEmbedded Software and Hardware development\nAutomotive electronics\n"}
+  ],
+  "slider": [
+    {"id": 2, "img": "https://thumbs.dreamstime.com/b/technical-support-customer-service-business-technology-internet-concept-126588020.jpg%C5%B1"},
+    {"id": 2, "img": "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/272197859_1366087053861347_1576649748151739825_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=WNhVl8cKwnkAX9hHnRn&_nc_oc=AQkPA2fNCoRQ4meSbqJRrAKxu1Q09UbbT5kdIjMNsNlbUXD_8xTj-_c7mIkwFZixeAC4lKMnpBsn6kdADYH-hICe&_nc_ht=scontent-vie1-1.xx&oh=03_AVIxRkRnjuNhpWXv7Tcnw8YoTKYgD4UvIpgFY2-1xZ9PRQ&oe=6211B7B1"}
+  ],
+
+  "profile": [
+    { "name": "Andras Bognar", "phone": "phone-number"}
+  ],
+  "sideBarData": [
+    { "id": 0, "title": "Home",  "path": "/"},
+    { "id": 1, "title": "About" ,  "path": "/"},
+    { "id": 2, "title": "Programming skills" ,  "path": "/"},
+    { "id": 3, "title": "Experiments" ,  "path": "/"},
+    { "id": 4, "title": "Schools" ,  "path": "/"}
+  ]
+}

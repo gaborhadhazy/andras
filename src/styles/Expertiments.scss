@@ -1,0 +1,42 @@
+.experiments-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+
+
+  .experiments-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    color: #060b26;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .experiments-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #060b26;
+    width: 70px;
+    border: none;
+
+    &:hover {
+      background-color: #7289DA;
+      transition: background-color 350ms;
+    }
+
+
+  }
+
+}

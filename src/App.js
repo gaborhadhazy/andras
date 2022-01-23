@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import SideBar from "./Components/SiderBar";
+import Experiments from "./Pages/Experiments";
+import Programming from "./Pages/Programming";
+import Schools from "./Pages/Schools";
+import Trainings from "./Pages/Trainings";
+import Hobby from "./Pages/Hobby";
+import Home from "./Pages/Home"
+import Slider from "./Components/Slider"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+      <BrowserRouter>
+          <SideBar/>
+          <Slider/>
+          <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/experiments" element={<Experiments/>}/>
+              <Route path="/programming-skills" element={<Programming/>}/>
+              <Route path="/schools" element={<Schools/>}/>
+              <Route path="/trainings" element={<Trainings/>}/>
+              <Route path="/hobby" element={<Hobby/>}/>
+          </Routes>
+      </BrowserRouter>
+      </>
+
+
   );
 }
 

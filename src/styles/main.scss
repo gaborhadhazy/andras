@@ -1,6 +1,7 @@
 @import "Sidebar";
 @import "Expertiments";
 @import "Slider";
+@import "Menu";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +52,7 @@ code {
     display: flex;
     align-self: center;
     margin-left: 10px;
-    color: white;
     font-weight: lighter;
+    color: black;
   }
 }

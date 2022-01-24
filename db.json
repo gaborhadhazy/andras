@@ -11,10 +11,10 @@
     { "name": "Andras Bognar", "phone": "phone-number"}
   ],
   "sideBarData": [
-    { "id": 0, "title": "Home",  "path": "/"},
-    { "id": 1, "title": "About" ,  "path": "/"},
-    { "id": 2, "title": "Programming skills" ,  "path": "/"},
-    { "id": 3, "title": "Experiments" ,  "path": "/"},
-    { "id": 4, "title": "Schools" ,  "path": "/"}
+    {"id": 0, "title": "Home"},
+    {"id": 1, "title": "Experiments"},
+    {"id": 2, "title": "Programming skills"},
+    {"id": 3, "title": "Schools"},
+    {"id": 4, "title": "Hobby"}
   ]
 }

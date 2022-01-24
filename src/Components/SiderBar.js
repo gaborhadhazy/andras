@@ -7,6 +7,31 @@ import axios from "axios";
 import {IconContext} from "react-icons";
 import {motion} from "framer-motion"
 
+
+function Menu() {
+    const [menu, set_menu] = useState([])
+
+    const fetch_menu = () => {
+      axios ({
+          method: "get",
+          url: "http://localhost:3001/sideBarData"
+      }).then(res => set_menu(res.data))
+    }
+
+    useEffect(() => {
+        fetch_menu()
+    }, [])
+
+    return (
+        <motion.div className="menu-container">
+            {
+                menu.map(menu_data => <motion.div whileHover={{scale: 1.1
+                }}><Link to="#" className="menu-item">{menu_data.title}</Link></motion.div>)
+            }
+        </motion.div>
+    )
+}
+
 function Profile() {
     const [profile, setProfile] = useState([])
 
@@ -47,6 +72,7 @@ function SideBar(props) {
                     <motion.div whileHover={{scale: 1.1}}><FaIcons.FaBars onClick={showSidebar}/></motion.div>
                 </Link>
                 <div>
+                    <Menu/>
                     <Profile/>
                 </div>
             </motion.div>
